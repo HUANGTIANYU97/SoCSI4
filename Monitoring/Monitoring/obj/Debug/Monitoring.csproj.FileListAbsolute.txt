@@ -1,0 +1,6 @@
+C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\bin\Debug\Monitoring.dll.config
+C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\bin\Debug\Monitoring.dll
+C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\bin\Debug\Monitoring.pdb
+C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\obj\Debug\Monitoring.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\obj\Debug\Monitoring.dll
+C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\obj\Debug\Monitoring.pdb

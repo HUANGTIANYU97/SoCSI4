@@ -1,0 +1,20 @@
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\bin\Debug\MapService.dll.config
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\bin\Debug\MapService.dll
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\bin\Debug\MapService.pdb
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\bin\Debug\Newtonsoft.Json.dll
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\bin\Debug\Newtonsoft.Json.xml
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\obj\Debug\MapService.csprojAssemblyReference.cache
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\obj\Debug\MapService.csproj.CopyComplete
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\obj\Debug\MapService.dll
+F:\POLYTECH\SI4\web service\biking\MapService\MapService\obj\Debug\MapService.pdb
+C:\Users\Eva\Desktop\biking\MapService\MapService\bin\Debug\MapService.dll.config
+C:\Users\Eva\Desktop\biking\MapService\MapService\bin\Debug\MapService.dll
+C:\Users\Eva\Desktop\biking\MapService\MapService\bin\Debug\MapService.pdb
+C:\Users\Eva\Desktop\biking\MapService\MapService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eva\Desktop\biking\MapService\MapService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eva\Desktop\biking\MapService\MapService\obj\Debug\MapService.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\biking\MapService\MapService\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs
+C:\Users\Eva\Desktop\biking\MapService\MapService\obj\Debug\MapService.csproj.CopyComplete
+C:\Users\Eva\Desktop\biking\MapService\MapService\obj\Debug\MapService.dll
+C:\Users\Eva\Desktop\biking\MapService\MapService\obj\Debug\MapService.pdb

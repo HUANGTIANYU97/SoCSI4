@@ -1,0 +1,24 @@
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\obj\Debug\GUI.csprojAssemblyReference.cache
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\obj\Debug\Biking.BikingGUI.resources
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\obj\Debug\Biking.Properties.Resources.resources
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\obj\Debug\GUI.csproj.GenerateResource.cache
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\bin\Debug\Biking.exe.config
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\bin\Debug\Biking.exe
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\bin\Debug\Biking.pdb
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\bin\Debug\Newtonsoft.Json.dll
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\bin\Debug\Newtonsoft.Json.xml
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\obj\Debug\GUI.csproj.CopyComplete
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\obj\Debug\Biking.exe
+F:\POLYTECH\SI4\web service\biking\GUI\Biking\obj\Debug\Biking.pdb
+C:\Users\Eva\Desktop\biking\GUI\Biking\bin\Debug\Biking.exe.config
+C:\Users\Eva\Desktop\biking\GUI\Biking\bin\Debug\Biking.exe
+C:\Users\Eva\Desktop\biking\GUI\Biking\bin\Debug\Biking.pdb
+C:\Users\Eva\Desktop\biking\GUI\Biking\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eva\Desktop\biking\GUI\Biking\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\Biking.BikingGUI.resources
+C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\Biking.Properties.Resources.resources
+C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\Biking.exe
+C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\Biking.pdb
