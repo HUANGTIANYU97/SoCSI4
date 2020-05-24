@@ -22,3 +22,15 @@ C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\GUI.csproj.GenerateResource.cac
 C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\Biking.exe
 C:\Users\Eva\Desktop\biking\GUI\Biking\obj\Debug\Biking.pdb
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\bin\Debug\Biking.exe.config
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\bin\Debug\Biking.exe
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\bin\Debug\Biking.pdb
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\obj\Debug\Biking.BikingGUI.resources
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\obj\Debug\Biking.Properties.Resources.resources
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\obj\Debug\Biking.exe
+C:\Users\Eva\Desktop\biking - 副本 - 副本\GUI\Biking\obj\Debug\Biking.pdb

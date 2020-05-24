@@ -17,3 +17,13 @@ C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfSer
 C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
 C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb
 C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll.config
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.pdb
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csproj.CopyComplete
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
+C:\Users\Eva\Desktop\biking - 副本 - 副本\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb

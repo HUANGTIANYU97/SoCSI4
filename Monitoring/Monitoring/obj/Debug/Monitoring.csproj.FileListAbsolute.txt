@@ -4,3 +4,15 @@ C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\bin\Debug\Monitoring.pdb
 C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\obj\Debug\Monitoring.csprojAssemblyReference.cache
 C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\obj\Debug\Monitoring.dll
 C:\Users\Eva\Desktop\biking\Monitoring\Monitoring\obj\Debug\Monitoring.pdb
+C:\Users\Eva\Desktop\biking - 副本 - 副本\Monitoring\Monitoring\bin\Debug\Monitoring.dll.config
+C:\Users\Eva\Desktop\biking - 副本 - 副本\Monitoring\Monitoring\bin\Debug\Monitoring.dll
+C:\Users\Eva\Desktop\biking - 副本 - 副本\Monitoring\Monitoring\bin\Debug\Monitoring.pdb
+C:\Users\Eva\Desktop\biking - 副本 - 副本\Monitoring\Monitoring\obj\Debug\Monitoring.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\biking - 副本 - 副本\Monitoring\Monitoring\obj\Debug\Monitoring.dll
+C:\Users\Eva\Desktop\biking - 副本 - 副本\Monitoring\Monitoring\obj\Debug\Monitoring.pdb
+C:\Users\Eva\Desktop\bike_extention_HUANGTianyu\Monitoring\Monitoring\bin\Debug\Monitoring.dll.config
+C:\Users\Eva\Desktop\bike_extention_HUANGTianyu\Monitoring\Monitoring\bin\Debug\Monitoring.dll
+C:\Users\Eva\Desktop\bike_extention_HUANGTianyu\Monitoring\Monitoring\bin\Debug\Monitoring.pdb
+C:\Users\Eva\Desktop\bike_extention_HUANGTianyu\Monitoring\Monitoring\obj\Debug\Monitoring.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\bike_extention_HUANGTianyu\Monitoring\Monitoring\obj\Debug\Monitoring.dll
+C:\Users\Eva\Desktop\bike_extention_HUANGTianyu\Monitoring\Monitoring\obj\Debug\Monitoring.pdb

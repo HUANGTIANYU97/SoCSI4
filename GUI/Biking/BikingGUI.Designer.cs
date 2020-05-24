@@ -46,30 +46,31 @@
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(21, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(262, 52);
+            this.label1.Size = new System.Drawing.Size(208, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Let\'s go biking!";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Help
             // 
+            this.Help.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Help.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Help.Location = new System.Drawing.Point(305, 31);
             this.Help.Name = "Help";
             this.Help.Size = new System.Drawing.Size(98, 32);
             this.Help.TabIndex = 1;
             this.Help.Text = "help";
-            this.Help.UseVisualStyleBackColor = true;
+            this.Help.UseVisualStyleBackColor = false;
             this.Help.Click += new System.EventHandler(this.Help_Click);
             // 
             // CityList
             // 
             this.CityList.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CityList.FormattingEnabled = true;
-            this.CityList.ItemHeight = 24;
+            this.CityList.ItemHeight = 20;
             this.CityList.Location = new System.Drawing.Point(48, 139);
             this.CityList.Name = "CityList";
-            this.CityList.Size = new System.Drawing.Size(102, 460);
+            this.CityList.Size = new System.Drawing.Size(102, 444);
             this.CityList.TabIndex = 2;
             this.CityList.SelectedIndexChanged += new System.EventHandler(this.CityList_SelectedIndexChanged);
             // 
@@ -79,7 +80,7 @@
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(44, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 24);
+            this.label2.Size = new System.Drawing.Size(106, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Choose the city:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -102,13 +103,14 @@
             // 
             // Search
             // 
+            this.Search.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Search.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search.Location = new System.Drawing.Point(569, 116);
             this.Search.Name = "Search";
             this.Search.Size = new System.Drawing.Size(86, 32);
             this.Search.TabIndex = 6;
             this.Search.Text = "search";
-            this.Search.UseVisualStyleBackColor = true;
+            this.Search.UseVisualStyleBackColor = false;
             this.Search.Click += new System.EventHandler(this.button2_Click);
             // 
             // Map
@@ -127,7 +129,7 @@
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(201, 103);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 24);
+            this.label3.Size = new System.Drawing.Size(67, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Departure";
             // 
@@ -137,7 +139,7 @@
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(201, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 24);
+            this.label4.Size = new System.Drawing.Size(74, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Destination";
             // 
@@ -145,6 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(1423, 845);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
