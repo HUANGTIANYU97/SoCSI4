@@ -16,3 +16,4 @@ C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfSer
 C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.csproj.CopyComplete
 C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
 C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb
+C:\Users\Eva\Desktop\biking\WcfServiceLibrary\WcfServiceLibrary\obj\Debug\XsdGeneratedCode\GeneratedXsdTypes.cs

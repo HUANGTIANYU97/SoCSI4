@@ -17,6 +17,7 @@ namespace WcfServiceLibrary
     {
         //private Cache cache = new Cache();
         private string apiKey = "63083ad99eacfd753e9e2eda682406279ba2606e";
+        private ServiceReference1.Service1Client service1ClientMonitor = new ServiceReference1.Service1Client();
 
         /*public List<Composite_Stations> GetInformation(string contract)
         {
@@ -27,12 +28,15 @@ namespace WcfServiceLibrary
         {
             OperationContext current = OperationContext.Current;
 
-            DateTime reqTime = DateTime.Now;
+            DateTime dateTime1 = DateTime.Now;
             WebRequest request = WebRequest.Create("https://api.jcdecaux.com/vls/v1/contracts" + "?apiKey=" + apiKey);
+            int currentHour = DateTime.Now.Hour;
+            service1ClientMonitor.UpdateNumberRequestsVelib(currentHour);
             // If required by the server, set the credentials.
             // request.Credentials = CredentialCache.DefaultCredentials;
             // Get the response.
             WebResponse response = request.GetResponse();
+
             // Display the status.
             Console.WriteLine(((HttpWebResponse)response).StatusDescription);
             // Get the stream containing content returned by the server.
@@ -45,15 +49,20 @@ namespace WcfServiceLibrary
             Console.WriteLine(responseFromServer);
             reader.Close();
             response.Close();
+            DateTime dateTime2 = DateTime.Now;
+            double delay = dateTime2.Subtract(dateTime1).TotalSeconds;
+            service1ClientMonitor.UpdateCurrentAverageDelay(delay);
             return JsonConvert.DeserializeObject<List<Composite_Cities>>(responseFromServer);
         }
 
         public List<Composite_Stations> GetCityStations(string cityStations)
         {
-            if (Cache.isEmpty) {
+            if (Cache.isEmpty)
+            {
                 OperationContext current = OperationContext.Current;
-
-                DateTime reqTime = DateTime.Now;
+                int currentHour = DateTime.Now.Hour;
+                service1ClientMonitor.UpdateNumberRequestsVelib(currentHour);
+                DateTime dateTime1 = DateTime.Now;
                 WebRequest request = WebRequest.Create("https://api.jcdecaux.com/vls/v1/stations?contract=" + cityStations + "&apiKey=" + apiKey);
                 WebResponse response = request.GetResponse();
 
@@ -76,9 +85,11 @@ namespace WcfServiceLibrary
                 Cache.SetJCDCacheStations(ja, cityStations);
                 reader.Close();
                 response.Close();
+                DateTime dateTime2 = DateTime.Now;
+                double delay = dateTime2.Subtract(dateTime1).TotalSeconds;
+                service1ClientMonitor.UpdateCurrentAverageDelay(delay);
                 return stations;
-                    }
-       
+            }
             else
                 return Cache.getJCDCacheStations();
         }

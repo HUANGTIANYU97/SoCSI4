@@ -12,10 +12,38 @@ namespace Monitoring
     public interface IService1
     {
         [OperationContract]
-        string GetData(int value);
+        CompositePeriodMonitor GetCompositePeriodMonitor(int period);
 
         [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
+        int GetNumberClients(int period);
+
+        [OperationContract]
+        int GetNumberClientRequests(int period);
+
+        [OperationContract]
+        int GetNumberRequestsVelib(int period);
+
+        [OperationContract]
+        int GetNumberRequestsGoogle(int period);
+
+        [OperationContract]
+        double GetCurrentAverageDelay();
+
+        [OperationContract]
+        void UpdateNumberClients(int period);
+
+        [OperationContract]
+        void UpdateNumberClientRequests(int period);
+
+        [OperationContract]
+        void UpdateNumberRequestsVelib(int period);
+
+        [OperationContract]
+        void UpdateNumberRequestsGoogle(int period);
+
+        [OperationContract]
+        void UpdateCurrentAverageDelay(double delay);
+
 
         // TODO: 在此添加您的服务操作
     }
@@ -23,23 +51,51 @@ namespace Monitoring
     // 使用下面示例中说明的数据约定将复合类型添加到服务操作。
     // 可以将 XSD 文件添加到项目中。在生成项目后，可以通过命名空间“Monitoring.ContractType”直接使用其中定义的数据类型。
     [DataContract]
-    public class CompositeType
+    public class CompositePeriodMonitor
     {
-        bool boolValue = true;
-        string stringValue = "Hello ";
+        int numberClients;
 
         [DataMember]
-        public bool BoolValue
+        public int NumberClients
         {
-            get { return boolValue; }
-            set { boolValue = value; }
+            get { return numberClients; }
+            set { numberClients = value; }
         }
 
+        int numberClientRequests;
+
         [DataMember]
-        public string StringValue
+        public int NumberClientRequests
         {
-            get { return stringValue; }
-            set { stringValue = value; }
+            get { return numberClientRequests; }
+            set { numberClientRequests = value; }
         }
+
+        int numberRequestsVelib;
+
+        [DataMember]
+        public int NumberRequestsVelib
+        {
+            get { return numberRequestsVelib; }
+            set { numberRequestsVelib = value; }
+        }
+
+        int numberRequestsGoogle;
+
+        [DataMember]
+        public int NumberRequestsGoogle
+        {
+            get { return numberRequestsGoogle; }
+            set { numberRequestsGoogle = value; }
+        }
+
+        /*int currentAverageDelay;
+
+        [DataMember]
+        public int CurrentAverageDelay
+        {
+            get { return currentAverageDelay; }
+            set { currentAverageDelay = value; }
+        }*/
     }
 }

@@ -15,6 +15,7 @@ namespace MapService
     {
         private Service1Client service1Client;
         private string apiKey = "AIzaSyAGHfrUxm3Z186Eh8e4zquiTBruEqygKmU";
+        private ServiceReference2.Service1Client service1ClientMonitor = new ServiceReference2.Service1Client();
 
         public Position GetLocation(string address)
         {
@@ -26,6 +27,9 @@ namespace MapService
                 answer = answer + i + "+";
             }
             answer = answer.Substring(0, answer.Length - 1);
+            int currentHour = DateTime.Now.Hour;
+            service1ClientMonitor.UpdateNumberRequestsGoogle(currentHour);
+            DateTime dateTime1 = DateTime.Now;
             WebRequest request = WebRequest.Create("https://maps.googleapis.com/maps/api/geocode/json?address=" + answer + "&key=" + apiKey);
             WebResponse response = request.GetResponse();
             Stream dataStream = response.GetResponseStream();
@@ -38,6 +42,9 @@ namespace MapService
             Position position = new Position();
             position.Lat = (double)tempArr[0]["geometry"]["location"]["lat"];
             position.Lng = (double)tempArr[0]["geometry"]["location"]["lng"];
+            DateTime dateTime2 = DateTime.Now;
+            double delay = dateTime2.Subtract(dateTime1).TotalSeconds;
+            service1ClientMonitor.UpdateCurrentAverageDelay(delay);
             return position;
         }
 

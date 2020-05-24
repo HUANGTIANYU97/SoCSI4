@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Monitoring" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetCompositePeriodMonitor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompositePeriodMonitor" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCompositePeriodMonitor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompositePeriodMonitorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberClients" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberClientRequests_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberClientRequests" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberClientRequests_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberClientRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberRequestsVelib_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberRequestsVelib" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberRequestsVelib_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberRequestsVelibResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberRequestsGoogle_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberRequestsGoogle" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetNumberRequestsGoogle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNumberRequestsGoogleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCurrentAverageDelay_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentAverageDelay" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCurrentAverageDelay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentAverageDelayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberClients_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberClients" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberClients_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberClientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberClientRequests_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberClientRequests" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberClientRequests_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberClientRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberRequestsVelib_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberRequestsVelib" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberRequestsVelib_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberRequestsVelibResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberRequestsGoogle_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberRequestsGoogle" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateNumberRequestsGoogle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNumberRequestsGoogleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCurrentAverageDelay_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCurrentAverageDelay" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateCurrentAverageDelay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCurrentAverageDelayResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetCompositePeriodMonitor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCompositePeriodMonitor" message="tns:IService1_GetCompositePeriodMonitor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCompositePeriodMonitorResponse" message="tns:IService1_GetCompositePeriodMonitor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNumberClients" message="tns:IService1_GetNumberClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNumberClientsResponse" message="tns:IService1_GetNumberClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberClientRequests">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNumberClientRequests" message="tns:IService1_GetNumberClientRequests_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNumberClientRequestsResponse" message="tns:IService1_GetNumberClientRequests_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberRequestsVelib">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNumberRequestsVelib" message="tns:IService1_GetNumberRequestsVelib_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNumberRequestsVelibResponse" message="tns:IService1_GetNumberRequestsVelib_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberRequestsGoogle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetNumberRequestsGoogle" message="tns:IService1_GetNumberRequestsGoogle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetNumberRequestsGoogleResponse" message="tns:IService1_GetNumberRequestsGoogle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentAverageDelay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCurrentAverageDelay" message="tns:IService1_GetCurrentAverageDelay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCurrentAverageDelayResponse" message="tns:IService1_GetCurrentAverageDelay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberClients">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateNumberClients" message="tns:IService1_UpdateNumberClients_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateNumberClientsResponse" message="tns:IService1_UpdateNumberClients_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberClientRequests">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateNumberClientRequests" message="tns:IService1_UpdateNumberClientRequests_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateNumberClientRequestsResponse" message="tns:IService1_UpdateNumberClientRequests_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberRequestsVelib">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateNumberRequestsVelib" message="tns:IService1_UpdateNumberRequestsVelib_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateNumberRequestsVelibResponse" message="tns:IService1_UpdateNumberRequestsVelib_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberRequestsGoogle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateNumberRequestsGoogle" message="tns:IService1_UpdateNumberRequestsGoogle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateNumberRequestsGoogleResponse" message="tns:IService1_UpdateNumberRequestsGoogle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCurrentAverageDelay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateCurrentAverageDelay" message="tns:IService1_UpdateCurrentAverageDelay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateCurrentAverageDelayResponse" message="tns:IService1_UpdateCurrentAverageDelay_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetCompositePeriodMonitor">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCompositePeriodMonitor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberClients">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNumberClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberClientRequests">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNumberClientRequests" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberRequestsVelib">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNumberRequestsVelib" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberRequestsGoogle">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetNumberRequestsGoogle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentAverageDelay">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCurrentAverageDelay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberClients">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateNumberClients" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberClientRequests">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateNumberClientRequests" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberRequestsVelib">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateNumberRequestsVelib" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNumberRequestsGoogle">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateNumberRequestsGoogle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCurrentAverageDelay">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateCurrentAverageDelay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Monitoring/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

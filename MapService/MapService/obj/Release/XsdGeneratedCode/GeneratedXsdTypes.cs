@@ -146,22 +146,22 @@ namespace MapService.ContractTypes
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetInformation
+    public partial class GetCityStations
     {
         
-        private string contractField;
+        private string cityStationsField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string contract
+        public string cityStations
         {
             get
             {
-                return this.contractField;
+                return this.cityStationsField;
             }
             set
             {
-                this.contractField = value;
+                this.cityStationsField = value;
             }
         }
     }
@@ -173,23 +173,23 @@ namespace MapService.ContractTypes
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetInformationResponse
+    public partial class GetCityStationsResponse
     {
         
-        private Composite_Stations[] getInformationResultField;
+        private Composite_Stations[] getCityStationsResultField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary")]
-        public Composite_Stations[] GetInformationResult
+        public Composite_Stations[] GetCityStationsResult
         {
             get
             {
-                return this.getInformationResultField;
+                return this.getCityStationsResultField;
             }
             set
             {
-                this.getInformationResultField = value;
+                this.getCityStationsResultField = value;
             }
         }
     }
@@ -565,146 +565,6 @@ namespace MapService.ContractTypes
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetStationInformation
-    {
-        
-        private string contractField;
-        
-        private int station_idField;
-        
-        private bool station_idFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string contract
-        {
-            get
-            {
-                return this.contractField;
-            }
-            set
-            {
-                this.contractField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int station_id
-        {
-            get
-            {
-                return this.station_idField;
-            }
-            set
-            {
-                this.station_idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool station_idSpecified
-        {
-            get
-            {
-                return this.station_idFieldSpecified;
-            }
-            set
-            {
-                this.station_idFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetStationInformationResponse
-    {
-        
-        private Composite_Stations getStationInformationResultField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public Composite_Stations GetStationInformationResult
-        {
-            get
-            {
-                return this.getStationInformationResultField;
-            }
-            set
-            {
-                this.getStationInformationResultField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetStations
-    {
-        
-        private string contractField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string contract
-        {
-            get
-            {
-                return this.contractField;
-            }
-            set
-            {
-                this.contractField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
-    public partial class GetStationsResponse
-    {
-        
-        private Composite_Stations[] getStationsResultField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary")]
-        public Composite_Stations[] GetStationsResult
-        {
-            get
-            {
-                return this.getStationsResultField;
-            }
-            set
-            {
-                this.getStationsResultField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary", IsNullable=true)]
     public partial class ArrayOfComposite_Cities
@@ -752,5 +612,728 @@ namespace MapService.ContractTypes
                 this.composite_StationsField = value;
             }
         }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/Monitoring")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://schemas.datacontract.org/2004/07/Monitoring", IsNullable=true)]
+    public partial class CompositePeriodMonitor
+    {
+        
+        private int numberClientRequestsField;
+        
+        private bool numberClientRequestsFieldSpecified;
+        
+        private int numberClientsField;
+        
+        private bool numberClientsFieldSpecified;
+        
+        private int numberRequestsGoogleField;
+        
+        private bool numberRequestsGoogleFieldSpecified;
+        
+        private int numberRequestsVelibField;
+        
+        private bool numberRequestsVelibFieldSpecified;
+        
+        /// <remarks/>
+        public int NumberClientRequests
+        {
+            get
+            {
+                return this.numberClientRequestsField;
+            }
+            set
+            {
+                this.numberClientRequestsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NumberClientRequestsSpecified
+        {
+            get
+            {
+                return this.numberClientRequestsFieldSpecified;
+            }
+            set
+            {
+                this.numberClientRequestsFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumberClients
+        {
+            get
+            {
+                return this.numberClientsField;
+            }
+            set
+            {
+                this.numberClientsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NumberClientsSpecified
+        {
+            get
+            {
+                return this.numberClientsFieldSpecified;
+            }
+            set
+            {
+                this.numberClientsFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumberRequestsGoogle
+        {
+            get
+            {
+                return this.numberRequestsGoogleField;
+            }
+            set
+            {
+                this.numberRequestsGoogleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NumberRequestsGoogleSpecified
+        {
+            get
+            {
+                return this.numberRequestsGoogleFieldSpecified;
+            }
+            set
+            {
+                this.numberRequestsGoogleFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumberRequestsVelib
+        {
+            get
+            {
+                return this.numberRequestsVelibField;
+            }
+            set
+            {
+                this.numberRequestsVelibField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NumberRequestsVelibSpecified
+        {
+            get
+            {
+                return this.numberRequestsVelibFieldSpecified;
+            }
+            set
+            {
+                this.numberRequestsVelibFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetCompositePeriodMonitor
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetCompositePeriodMonitorResponse
+    {
+        
+        private CompositePeriodMonitor getCompositePeriodMonitorResultField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public CompositePeriodMonitor GetCompositePeriodMonitorResult
+        {
+            get
+            {
+                return this.getCompositePeriodMonitorResultField;
+            }
+            set
+            {
+                this.getCompositePeriodMonitorResultField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberClients
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberClientsResponse
+    {
+        
+        private int getNumberClientsResultField;
+        
+        private bool getNumberClientsResultFieldSpecified;
+        
+        /// <remarks/>
+        public int GetNumberClientsResult
+        {
+            get
+            {
+                return this.getNumberClientsResultField;
+            }
+            set
+            {
+                this.getNumberClientsResultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GetNumberClientsResultSpecified
+        {
+            get
+            {
+                return this.getNumberClientsResultFieldSpecified;
+            }
+            set
+            {
+                this.getNumberClientsResultFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberClientRequests
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberClientRequestsResponse
+    {
+        
+        private int getNumberClientRequestsResultField;
+        
+        private bool getNumberClientRequestsResultFieldSpecified;
+        
+        /// <remarks/>
+        public int GetNumberClientRequestsResult
+        {
+            get
+            {
+                return this.getNumberClientRequestsResultField;
+            }
+            set
+            {
+                this.getNumberClientRequestsResultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GetNumberClientRequestsResultSpecified
+        {
+            get
+            {
+                return this.getNumberClientRequestsResultFieldSpecified;
+            }
+            set
+            {
+                this.getNumberClientRequestsResultFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberRequestsVelib
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberRequestsVelibResponse
+    {
+        
+        private int getNumberRequestsVelibResultField;
+        
+        private bool getNumberRequestsVelibResultFieldSpecified;
+        
+        /// <remarks/>
+        public int GetNumberRequestsVelibResult
+        {
+            get
+            {
+                return this.getNumberRequestsVelibResultField;
+            }
+            set
+            {
+                this.getNumberRequestsVelibResultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GetNumberRequestsVelibResultSpecified
+        {
+            get
+            {
+                return this.getNumberRequestsVelibResultFieldSpecified;
+            }
+            set
+            {
+                this.getNumberRequestsVelibResultFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberRequestsGoogle
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetNumberRequestsGoogleResponse
+    {
+        
+        private int getNumberRequestsGoogleResultField;
+        
+        private bool getNumberRequestsGoogleResultFieldSpecified;
+        
+        /// <remarks/>
+        public int GetNumberRequestsGoogleResult
+        {
+            get
+            {
+                return this.getNumberRequestsGoogleResultField;
+            }
+            set
+            {
+                this.getNumberRequestsGoogleResultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GetNumberRequestsGoogleResultSpecified
+        {
+            get
+            {
+                return this.getNumberRequestsGoogleResultFieldSpecified;
+            }
+            set
+            {
+                this.getNumberRequestsGoogleResultFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetCurrentAverageDelay
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class GetCurrentAverageDelayResponse
+    {
+        
+        private double getCurrentAverageDelayResultField;
+        
+        private bool getCurrentAverageDelayResultFieldSpecified;
+        
+        /// <remarks/>
+        public double GetCurrentAverageDelayResult
+        {
+            get
+            {
+                return this.getCurrentAverageDelayResultField;
+            }
+            set
+            {
+                this.getCurrentAverageDelayResultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool GetCurrentAverageDelayResultSpecified
+        {
+            get
+            {
+                return this.getCurrentAverageDelayResultFieldSpecified;
+            }
+            set
+            {
+                this.getCurrentAverageDelayResultFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberClients
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberClientsResponse
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberClientRequests
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberClientRequestsResponse
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberRequestsVelib
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberRequestsVelibResponse
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberRequestsGoogle
+    {
+        
+        private string periodField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string period
+        {
+            get
+            {
+                return this.periodField;
+            }
+            set
+            {
+                this.periodField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateNumberRequestsGoogleResponse
+    {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateCurrentAverageDelay
+    {
+        
+        private double delayField;
+        
+        private bool delayFieldSpecified;
+        
+        /// <remarks/>
+        public double delay
+        {
+            get
+            {
+                return this.delayField;
+            }
+            set
+            {
+                this.delayField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool delaySpecified
+        {
+            get
+            {
+                return this.delayFieldSpecified;
+            }
+            set
+            {
+                this.delayFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("MSBuild", "16.4.0+e901037fe1815eae17424f860412d0b967d09461")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://tempuri.org/")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://tempuri.org/", IsNullable=false)]
+    public partial class UpdateCurrentAverageDelayResponse
+    {
     }
 }
