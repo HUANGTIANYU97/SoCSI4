@@ -41,12 +41,6 @@ namespace Biking
             {
                 this.CityList.Items.Add(i.Name);
             }
-            ComboBox cbPeriod = this.comboBox2;
-            for(int i = 0;i <= 23; i++)
-            {
-                period = i + ":00-" + (i + 1) + ":00";
-                cbPeriod.Items.Add(period);
-            }
 
             int currentHour2 = DateTime.Now.Hour;
             if (ifCurrentHour != currentHour2)
@@ -155,45 +149,7 @@ namespace Biking
 
         private void button6_Click(object sender, EventArgs e)
         {
-            int currentHour = DateTime.Now.Hour;
-            if (ifCurrentHour != currentHour)
-            {
-                ifCurrentHour = currentHour;
-                service1ClientMonitor.UpdateNumberClients(currentHour);
-            }
-            if (periodInt == -1) {
-                this.richTextBox1.Text = "Please choose a period";
-                return;
-            }
-            string monitorMessage = "";
-            string numberClientsLabel = "number of clients in this period: ";
-            string numberClientRequestsLabel = "number of clients requests in this period: ";
-            string currenAverageDelayLabel = "current average delay: ";
-            string numberRequestsVelibLabel = "number of requests Velib in this period: ";
-            string numberRequestsGoogleLabel = "number of requests Google Map in this period: ";
-            string numberClients = "\n";
-            string numberClientRequests = "\n";
-            string currenAverageDelay = "\n";
-            string numberRequestsVelib = "\n";
-            string numberRequestsGoogle = "\n";
-            //service1Client3.UpdateCurrentAverageDelay(number);
-            //number++;
-            //Console.WriteLine(number);
-            numberClients = service1ClientMonitor.GetNumberClients(periodInt) + numberClients;
-            numberClientRequests = service1ClientMonitor.GetNumberClientRequests(periodInt) + numberClientRequests;
-            currenAverageDelay = service1ClientMonitor.GetCurrentAverageDelay() + "s" + currenAverageDelay;
-            numberRequestsVelib = service1ClientMonitor.GetNumberRequestsVelib(periodInt) + numberRequestsVelib;
-            numberRequestsGoogle = service1ClientMonitor.GetNumberRequestsGoogle(periodInt) + numberRequestsGoogle;
 
-
-            monitorMessage = numberClientsLabel + numberClients
-                + numberClientRequestsLabel + numberClientRequests
-                + currenAverageDelayLabel + currenAverageDelay
-                + numberRequestsVelibLabel + numberRequestsVelib
-                + numberRequestsGoogleLabel + numberRequestsGoogle;
-
-
-            this.richTextBox1.Text = monitorMessage;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -218,15 +174,7 @@ namespace Biking
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            period = this.comboBox2.Text;
-            if (period.Substring(1, 1).Equals(":"))
-            {
-                periodInt = int.Parse(period.Substring(0, 1));
-            }
-            else
-            {
-                periodInt = int.Parse(period.Substring(0, 2));
-            }
+
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)

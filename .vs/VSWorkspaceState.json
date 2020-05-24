@@ -3,8 +3,9 @@
     "",
     "\\GUI",
     "\\MapService",
+    "\\MonitorForm",
     "\\WcfServiceLibrary"
   ],
-  "SelectedNode": "\\WcfServiceLibrary\\WcfServiceLibrary.sln",
+  "SelectedNode": "\\MonitorForm\\MonitorForm.sln",
   "PreviewInSolutionExplorer": false
 }

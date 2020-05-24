@@ -759,11 +759,12 @@ namespace MapService.ContractTypes
     public partial class GetCompositePeriodMonitor
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -772,6 +773,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -813,11 +828,12 @@ namespace MapService.ContractTypes
     public partial class GetNumberClients
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -826,6 +842,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -882,11 +912,12 @@ namespace MapService.ContractTypes
     public partial class GetNumberClientRequests
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -895,6 +926,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -951,11 +996,12 @@ namespace MapService.ContractTypes
     public partial class GetNumberRequestsVelib
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -964,6 +1010,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -1020,11 +1080,12 @@ namespace MapService.ContractTypes
     public partial class GetNumberRequestsGoogle
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -1033,6 +1094,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -1142,11 +1217,12 @@ namespace MapService.ContractTypes
     public partial class UpdateNumberClients
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -1155,6 +1231,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -1180,11 +1270,12 @@ namespace MapService.ContractTypes
     public partial class UpdateNumberClientRequests
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -1193,6 +1284,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -1218,11 +1323,12 @@ namespace MapService.ContractTypes
     public partial class UpdateNumberRequestsVelib
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -1231,6 +1337,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }
@@ -1256,11 +1376,12 @@ namespace MapService.ContractTypes
     public partial class UpdateNumberRequestsGoogle
     {
         
-        private string periodField;
+        private int periodField;
+        
+        private bool periodFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string period
+        public int period
         {
             get
             {
@@ -1269,6 +1390,20 @@ namespace MapService.ContractTypes
             set
             {
                 this.periodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool periodSpecified
+        {
+            get
+            {
+                return this.periodFieldSpecified;
+            }
+            set
+            {
+                this.periodFieldSpecified = value;
             }
         }
     }

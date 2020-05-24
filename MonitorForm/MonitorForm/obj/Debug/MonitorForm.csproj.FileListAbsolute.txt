@@ -1,0 +1,9 @@
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\bin\Debug\MonitorForm.exe.config
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\bin\Debug\MonitorForm.exe
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\bin\Debug\MonitorForm.pdb
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\obj\Debug\MonitorForm.csprojAssemblyReference.cache
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\obj\Debug\MonitorForm.Properties.Resources.resources
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\obj\Debug\MonitorForm.csproj.GenerateResource.cache
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\obj\Debug\MonitorForm.exe
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\obj\Debug\MonitorForm.pdb
+C:\Users\Eva\Desktop\biking\MonitorForm\MonitorForm\obj\Debug\MonitorForm.MonitorGUI.resources
