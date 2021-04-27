@@ -3,7 +3,7 @@
 ## **Introduction**
 
 Monitoring est un IWS qui fournit des données de surveillance.
-WcfServiceLibrary est un IWS pour JCDeaux.
+WcfServiceLibrary est un IWS pour JCDecaux.
 MapService est un IWS pour Google Map.
 GUI est une application WinForm  qui fournit clients un itinéraire de la station Velib du point de départ à la destination basées sur JCDeaux et Google Map.
 MonitorForm est une application WinForm qui peut afficher des informations de surveillance de la forme du texte et la forme graphique.
@@ -27,12 +27,12 @@ Toulouse
 Muséum de Toulouse
 Université Toulouse 1 Capitole
 
-### **JCDeaux Service**
+### **JCDecaux Service**
 
-- GetContracts()    Fournir des informations sur toutes les villes de JCDeaux
+- GetContracts()    Fournir des informations sur toutes les villes de JCDecaux
 - GetCityStations(string cityStations)    Fournir des informations de toutes les stations de la ville correspondante
 
-Un cache statique est ajouté pour stocker les informations des sations, réduisant les communication entre JCDeaux et IWS.
+Un cache statique est ajouté pour stocker les informations des sations, réduisant les communication entre JCDecaux et IWS.
 
 
 ### **Google Map Service**
